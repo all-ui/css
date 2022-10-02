@@ -1,11 +1,16 @@
 {
-  "name": "allui-css",
+  "name": "@allui/css",
   "version": "0.0.1",
   "description": "An all-in-one UI CSS Library for efficient web application development.",
   "main": "dist/allui.css",
   "module": "dist/allui.css",
-  "scripts": {},
+  "scripts": {
+    "pub": "npm version patch && npm publish"
+  },
   "keywords": [],
   "author": "Vikram Chauhan",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
