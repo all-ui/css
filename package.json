@@ -1,6 +1,6 @@
 {
   "name": "@allui/css",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An all-in-one UI CSS Library for efficient web application development.",
   "main": "dist/allui.css",
   "module": "dist/allui.css",
