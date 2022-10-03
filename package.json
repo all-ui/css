@@ -12,5 +12,10 @@
   "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "homepage": "https://github.com/all-ui/css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/all-ui/css"
   }
 }
