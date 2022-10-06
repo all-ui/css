@@ -1872,17 +1872,33 @@ textarea {
 .input-with-icon i {
   position: absolute;
   color: #7e7e7e;
-  font-size: 0.9rem;
+  font-size: 14.4px;
   left: 0px;
   top: 0px;
   background: rgb(59 59 59 / 50%);
-  padding: 0.57rem 0.7rem;
-  border-top-left-radius: 0.8rem;
-  border-bottom-left-radius: 0.8rem;
+  padding: 9.26px 11.2px;
+  border-top-left-radius: 12.8px;
+  border-bottom-left-radius: 12.8px;
 }
 
 .input-with-icon .input {
   padding: 0.5rem 1rem 0.5rem 3rem !important;
+}
+
+.input-with-icon .input-sm {
+  padding: 0.25rem 1rem 0.25rem 3rem !important;
+}
+
+.input-with-icon .input-lg {
+  padding: 0.75rem 1rem 0.75rem 3rem !important;
+}
+
+.input-with-icon .input-icon-sm {
+  padding: 5.2px 11.2px !important;
+}
+
+.input-with-icon .input-icon-lg {
+  padding: 13px 11.2px !important;
 }
 
 .input-round {
