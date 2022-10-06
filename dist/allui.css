@@ -1778,7 +1778,7 @@ textarea {
   line-height: inherit;
 }
 
-.input {
+/* .input {
   display: block;
   width: 100%;
 
@@ -1815,4 +1815,85 @@ textarea {
 
 .input:hover {
   background: #000;
+} */
+
+.input {
+  display: block;
+  width: 100%;
+
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: inherit;
+  border: none;
+
+  background-clip: padding-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.input:focus {
+  outline: 0 !important;
+}
+
+.input-sm {
+  padding: 0.25rem 1rem !important;
+}
+
+.input-lg {
+  padding: 0.75rem 1rem !important;
+}
+
+.input-dark {
+  color: #ccc !important;
+  background: #111 !important;
+}
+
+.input-dark::placeholder {
+  color: #495057;
+}
+
+.input-dark:focus {
+  background: #000;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(59 59 59 / 30%);
+}
+
+.input-dark:hover {
+  background: #000 !important;
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon i {
+  position: absolute;
+  color: #7e7e7e;
+  font-size: 0.9rem;
+  left: 0px;
+  top: 0px;
+  background: rgb(59 59 59 / 50%);
+  padding: 0.57rem 0.7rem;
+  border-top-left-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+}
+
+.input-with-icon .input {
+  padding: 0.5rem 1rem 0.5rem 3rem !important;
+}
+
+.input-round {
+  border-radius: 0.8rem !important;
+}
+
+.input-transited {
+  transition: background 0.23s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out !important;
+}
+
+.input-transparent {
+  background: transparent !important;
 }

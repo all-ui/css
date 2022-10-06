@@ -2,8 +2,6 @@
   "name": "@allui/css",
   "version": "0.0.4",
   "description": "An all-in-one UI CSS Library for efficient web application development.",
-  "main": "dist/allui.css",
-  "module": "dist/allui.css",
   "scripts": {
     "pub": "npm publish"
   },
@@ -17,5 +15,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/all-ui/css"
-  }
+  },
+  "files": [
+    "dist"
+  ],
+  "style": "dist/allui.css"
 }
