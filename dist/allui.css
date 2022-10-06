@@ -1781,20 +1781,22 @@ textarea {
 .input {
   display: block;
   width: 100%;
+
   padding: 0.25rem 1rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #ccc;
   background: #111;
-  background-clip: padding-box;
   border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   border-radius: 0.8rem;
   transition: background 0.23s ease-in-out, border-color 0.15s ease-in-out,
     box-shadow 0.15s ease-in-out;
+
+  background-clip: padding-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .input-transparent {
@@ -1806,10 +1808,9 @@ textarea {
 }
 
 .input:focus {
-  color: #212529;
   background: #000;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgb(0 0 0 / 30%);
+  box-shadow: 0 0 0 0.2rem rgb(59 59 59 / 30%);
 }
 
 .input:hover {
