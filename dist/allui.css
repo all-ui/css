@@ -1778,45 +1778,6 @@ textarea {
   line-height: inherit;
 }
 
-/* .input {
-  display: block;
-  width: 100%;
-
-  padding: 0.25rem 1rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #ccc;
-  background: #111;
-  border: none;
-  border-radius: 0.8rem;
-  transition: background 0.23s ease-in-out, border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-
-  background-clip: padding-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.input-transparent {
-  background: transparent !important;
-}
-
-.input::placeholder {
-  color: #495057;
-}
-
-.input:focus {
-  background: #000;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgb(59 59 59 / 30%);
-}
-
-.input:hover {
-  background: #000;
-} */
-
 .input {
   display: block;
   width: 100%;
@@ -1838,7 +1799,17 @@ textarea {
   outline: 0 !important;
 }
 
-.input-sm {
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon .input-icon {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+/* .input-sm {
   padding: 0.25rem 1rem !important;
 }
 
@@ -1863,36 +1834,21 @@ textarea {
 
 .input-dark:hover {
   background: #000 !important;
-}
+} */
 
-.input-with-icon {
-  position: relative;
-}
-
-.input-with-icon .input-icon {
-  position: absolute;
-  color: #000;
-  font-size: 1rem;
-  left: 0px;
-  top: 0px;
-  padding: 0.5rem 0.65rem;
-  border-top-left-radius: 12.8px;
-  border-bottom-left-radius: 12.8px;
-}
-
-.input-with-icon .input-icon-dark {
+/* .input-with-icon .input-icon-dark {
   color: #7e7e7e !important;
-}
+} */
 
-.input-with-icon .input-icon-bg-dark {
+/* .input-with-icon .input-icon-bg-dark {
   background: rgb(59 59 59 / 50%) !important;
-}
+} */
 
-.input-with-icon .input {
+/* .input-with-icon .input {
   padding: 0.5rem 1rem 0.5rem 3rem !important;
-}
+} */
 
-.input-with-icon .input-sm {
+/* .input-with-icon .input-sm {
   padding: 0.25rem 1rem 0.25rem 3rem !important;
 }
 
@@ -1919,4 +1875,4 @@ textarea {
 
 .input-transparent {
   background: transparent !important;
-}
+} */
