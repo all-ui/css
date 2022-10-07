@@ -1869,16 +1869,23 @@ textarea {
   position: relative;
 }
 
-.input-with-icon i {
+.input-with-icon .input-icon {
   position: absolute;
-  color: #7e7e7e;
-  font-size: 14.4px;
+  color: #000;
+  font-size: 1rem;
   left: 0px;
   top: 0px;
-  background: rgb(59 59 59 / 50%);
-  padding: 9.26px 11.2px;
+  padding: 0.5rem 0.65rem;
   border-top-left-radius: 12.8px;
   border-bottom-left-radius: 12.8px;
+}
+
+.input-with-icon .input-icon-dark {
+  color: #7e7e7e !important;
+}
+
+.input-with-icon .input-icon-bg-dark {
+  background: rgb(59 59 59 / 50%) !important;
 }
 
 .input-with-icon .input {
@@ -1894,11 +1901,11 @@ textarea {
 }
 
 .input-with-icon .input-icon-sm {
-  padding: 5.2px 11.2px !important;
+  padding: 0.25rem 0.65rem !important;
 }
 
 .input-with-icon .input-icon-lg {
-  padding: 13px 11.2px !important;
+  padding: 0.75rem 0.65rem !important;
 }
 
 .input-round {
