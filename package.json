@@ -1,6 +1,6 @@
 {
   "name": "@allui/css",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "An all-in-one UI CSS Library for efficient web application development.",
   "scripts": {
     "pub": "npm publish"
