@@ -1205,7 +1205,7 @@ body {
 }
 
 .full-width {
-  width: 100% !important;
+  width: 100%;
 }
 
 .full-width-viewport {
@@ -1891,6 +1891,18 @@ p {
 @keyframes b-2-o {
   0% {
     transform: translateY(30%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes t-2-o {
+  0% {
+    transform: translateY(-30%);
     opacity: 0;
   }
 
