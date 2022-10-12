@@ -1755,6 +1755,10 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* BUTTONS */
 
 .btn {
@@ -1806,6 +1810,41 @@ p {
   position: absolute;
   left: 0px;
   top: 0px;
+}
+
+.select-box {
+  display: flex;
+  /* max-width: max-content; */
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.selected-box {
+  margin: 0;
+  display: block;
+  width: 100%;
+
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+
+  background-clip: padding-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  animation: c-2-f 1.5s ease forwards 1;
+  background: #fff;
 }
 
 /* .input-sm {
