@@ -2070,6 +2070,34 @@ a {
   }
 }
 
+@keyframes toast1 {
+  0% {
+    top: -50%;
+  }
+
+  80% {
+    top: 12%;
+  }
+
+  100% {
+    top: 10%;
+  }
+}
+
+@keyframes toast1-close {
+  0% {
+    top: 10%;
+  }
+
+  20% {
+    top: 12%;
+  }
+
+  100% {
+    top: -50%;
+  }
+}
+
 /* SPINNERS */
 
 .spinner-2 {
@@ -2117,4 +2145,12 @@ a {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* TOASTS */
+
+.toast {
+  position: absolute;
+  z-index: 10000000000000000;
+  top: -50%;
 }
