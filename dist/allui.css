@@ -1812,6 +1812,22 @@ a {
   top: 0px;
 }
 
+.input-with-icon .input-error-icon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: rgb(255 0 0 / 55%);
+}
+
+.input-with-icon .input-error-msg {
+  color: rgb(255 0 0 / 45%);
+  letter-spacing: 1px;
+}
+
+.error-text {
+  color: rgb(255 0 0 / 55%) !important;
+}
+
 .select-box {
   width: 100%;
   position: relative;
@@ -1819,6 +1835,86 @@ a {
 
 .selected-box {
   width: 100%;
+  position: relative;
+}
+
+.multi-selected-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.select-chevron {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+}
+
+.multiselect-divider {
+  /* position: absolute;
+  top: 0%;
+  right: 2.3rem; */
+  font-weight: 100;
+}
+
+.multiselect-cancel {
+  /* position: absolute;
+  top: 50%;
+  right: 2.8rem; */
+  font-weight: 100;
+  /* transform: translateY(-50%); */
+  cursor: pointer;
+}
+
+.multi-selected-values {
+  /* position: absolute;
+  top: 50%;
+  left: 2.6rem; */
+  /* font-weight: 100; */
+  /* transform: translateY(-50%); */
+  cursor: pointer;
+  max-width: 100px;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.multi-selected-value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  border: 0.5px solid #ff009e;
+  padding: 3px 0.5rem 0 0.5rem;
+  max-width: max-content;
+  gap: 3px;
+  color: #fff !important;
+  font-weight: 400;
+}
+
+.phone-selected-box {
+  position: relative;
+  width: 100%;
+}
+
+.phone-selected-box .phone-selected {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding-left: 0.4rem;
+}
+
+.phone-select-icon {
+  position: absolute;
+  top: 50%;
+  left: 27%;
+  transform: translateY(-50%);
 }
 
 .select-dropdown {
@@ -1840,6 +1936,15 @@ a {
   list-style: none;
   width: 100%;
   cursor: pointer;
+}
+
+.phoneselect-dropdown-list-item {
+  list-style: none;
+  width: 100%;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .select-dropdown::-webkit-scrollbar {
@@ -1962,5 +2067,54 @@ a {
   100% {
     transform: translateY(0%);
     opacity: 1;
+  }
+}
+
+/* SPINNERS */
+
+.spinner-2 {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  overflow: hidden;
+  position: relative;
+  animation: text-color 2s ease-in-out infinite alternate;
+}
+
+.spinner-2::before,
+.spinner-2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  /* mix-blend-mode: overlay; */
+  animation: rotate var(--duration) var(--timing) infinite;
+  pointer-events: none;
+}
+
+.spinner-2::before {
+  border-left-color: #8700ff;
+  --duration: 1s;
+  --timing: ease-in;
+}
+
+.spinner-2::after {
+  border-right-color: #ff009e;
+  --duration: 1.5s;
+  --timing: ease-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
